@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="col-md-6 offset-md-3">
+
+    <h3> Create Farmer </h3>
+
+    <form (ngSubmit) = "onSubmit()">
+
+   
+
+
+
+
+      <div class="form-group">
+
+        <label> FarmerId</label>
+
+        <input type="text" class ="form-control" id = "farmerId"
+
+            [(ngModel)] = "farmer.farmerId" name = "farmerId"><br>
+
+    </div>
+
+
+
+
+    <div class="form-group">
+
+      <label> username</label>
+
+      <input type="text" class ="form-control" id = "username"
+
+          [(ngModel)] = "farmer.username" name = "username"><br>
+
+  </div>
+
+
+
+
+
+  <div class="form-group">
+
+    <label> First Name</label>
+
+    <input type="text" class ="form-control" id = "firstName"
+
+        [(ngModel)] = "farmer.firstName" name = "firstName"><br>
+
+</div>
+
+
+
+       
+
+        <div class="form-group">
+
+            <label> Last Name</label>
+
+            <input type="text" class ="form-control" id = "lastName"
+
+                [(ngModel)] = "farmer.lastName" name = "lastName"><br>
+
+        </div>
+
+   
+
+        <div class="form-group">
+
+            <label> Phone number</label>
+
+            <input type="text" class ="form-control" id = "phoneNo"
+
+                [(ngModel)] = "farmer.phoneNo" name = "phoneNo"><br>
+
+        </div>
+
+   
+
+        <div class="form-group">
+
+          <label> Pincode</label>
+
+          <input type="text" class ="form-control" id = "pincode"
+
+              [(ngModel)] = "farmer.pincode" name = "pincode"><br>
+
+      </div>
+
+ 
+
+        <button class = "btn btn-success" type ="submit">Submit</button>
+
+        <button class = "btn btn-success" type ="submit">
+          <a routerLink="/home" class="home" href="/#home" onclick="myFunction()"><b>Home</b></a>
+
+        </button>
+
+
+    </form>
+
+    </div>
+
+
+
+    <div [hidden]="!submitted"><br>
+
+      <h4>You submitted successfully!</h4>
+
+     
+
+    </div>

@@ -1,0 +1,63 @@
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+
+      <h2>Farmers List</h2>
+
+    </div>
+
+    <div class="panel-body">
+
+      <table class="table table-striped">
+
+        <thead>
+
+          <tr>
+
+            <th>farmerId</th>
+
+            <th>username</th>
+
+            <th>firstName</th>
+
+            <th>lastName</th>
+
+            <th>pincode</th>
+
+            <th>phoneNo</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let farmer of farmers | async">
+
+        <td>{{farmer.farmerId}}</td>
+
+        <td>{{farmer.username}}</td>
+
+        <td>{{farmer.firstName}}</td>
+
+        <td>{{farmer.lastName}}</td>
+
+        <td>{{farmer.pincode}}</td>
+
+        <td>{{farmer.phoneNo}}</td>
+
+        <td><button (click)="deleteFarmer(farmer?.farmerId!)" class="btn btn-danger">Delete</button>
+
+            <button (click)="farmerDetails(farmer?.farmerId!)" class="btn btn-info" style="margin-left: 10px">Details</button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+</div>

@@ -1,0 +1,89 @@
+.logo{
+    height: 100vh;
+    width: 210vh;
+}
+
+.h1{
+
+    position:relative;
+
+    text-align:center;
+
+    top: 5px;
+
+    color:black;
+
+    font-family:'Times New Roman';
+
+    size: larger;
+
+}
+
+.navbar {
+
+    overflow:hidden;
+
+    background-color:rgb(202, 172, 94);
+    
+
+    }
+
+    .navbar a{
+
+    float: left;
+
+    font-size: 20px;
+
+    color:black;
+
+    text-align: center;
+
+    padding: 12px;
+
+    text-decoration:solid;
+
+    }
+
+    .home{
+
+    position:relative;
+
+    left: 800px;
+
+    color:black;
+
+    font-family:'Times New Roman';
+
+    font-size:40px;
+
+    }
+
+    .log{
+
+        position: relative;
+
+        left: 970px;
+
+        color:black;
+
+        size: larger;
+
+        font-family:'Times New Roman';
+
+    }
+
+    .adv{
+
+        position: relative;
+
+        left: 15px;
+
+        font-size: 20px;
+
+        color:black;
+
+        size: larger;
+
+        font-family:'Times New Roman';
+
+    }

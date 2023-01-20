@@ -1,0 +1,77 @@
+<h3>Update Farmer</h3>
+
+<div style="width: 400px;">
+
+<form (ngSubmit)="onSubmit()">
+
+
+
+<div class="form-group">
+
+  <label for="name">Username</label>
+
+  <input type="text" class="form-control" id="username" name="username"><br>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="name">First Name</label>
+
+<input type="text" class="form-control" id="firstName" name="firstName"><br>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="name">Last Name</label>
+
+<input type="text" class="form-control" id="lastName" name="lastName"><br>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="name">PinCode</label>
+
+<input type="text" class="form-control" id="pincode" name="Pincode"><br>
+
+</div>
+
+
+
+<div class="form-group">
+
+  <label for="name">Phone Number</label>
+
+  <input type="text" class="form-control" id="phoneNo" name="Phone Number"><br>
+
+</div>
+
+<button type="submit" class="btn btn-success">Submit</button>
+<button class = "btn btn-success" type ="submit">
+  <a routerLink="/home" class="home" href="/#home" onclick="myFunction()"><b>Home</b></a>
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+<div [hidden]="!submitted" >
+
+<h6>Updated successfully!</h6>
+
+<!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+
+</div>
